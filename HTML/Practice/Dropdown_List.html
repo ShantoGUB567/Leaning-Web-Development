@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Select your Departemt</h1>
+    <select id="dropdown">
+        <option value="CSE">CSE</option>
+        <option value="EEE">EEE</option>
+        <option value="BBA">BBA</option>
+        <option value="LLB">LLB</option>
+        <option value="JMC">JMC</option>
+    </select>
+    <br><br><br>
+
+    <button onclick="countDropdownItems()">Count Items & Display</button>
+
+    <script>
+        function countDropdownItems() {
+            var dropdown = document.getElementById("dropdown");
+            var items = dropdown.options.length;
+            var itemList = '';
+            
+            for (var i = 0; i < dropdown.options.length; i++) {
+                itemList += dropdown.options[i].text + '\n';
+            }
+            
+            alert("Total items: " + items + "\n\nItems:\n" + itemList);
+        }
+    </script>
+
+</body>
+</html>
+</body>
+</html>

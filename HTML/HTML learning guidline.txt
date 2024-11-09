@@ -1,0 +1,27 @@
+Topic of HTML:
+What is HTML
+Why HTML
+History 
+Tags, Content, Element, Attributes 
+Debugging 
+Text Formatting Tags 
+Entity, Comment, Symbol 
+List(order & Unorder)
+Image & iframe 
+Table 
+Form 
+Multimedia 
+Meta tags & SEO 
+Semantic HTML 
+Web Accessibility 
+Graphics 
+HTML5 API- localstorage 
+HTML Templates 
+
+
+Task: 
+1. Anisul Islam tuitorial 
+2. Proggraming Hero tuitorial 
+3. Code With Harry 
+4. Apna College 
+5. referrence book 

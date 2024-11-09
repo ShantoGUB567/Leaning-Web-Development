@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout of HTML</title>
+    </head>
+    <body>
+        <!--Header Part-->
+        <header>
+            <div class="logo">
+                <h1>Green University</h1>
+            </div>
+            <div class="naviagation">
+                <nav>
+                    <ul>
+                        <li><a href="#"></a>Home</a></li>
+                        <li><a href="#"></a>Admission</a></li>
+                        <li><a href="#"></a>Departemt</a></li>
+                        <li><a href="#"></a>Faculty Members</a></li>
+                        <li><a href="#"></a>Address</a></li>
+                        <li><a href="#"></a>Contact US</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--Main Part-->
+        <main>
+            <section>
+                <article>
+                    <p>
+                        <h3>জাতীয় শোক দিবস পালন গ্রিন ইউনিভার্সিটিতে</h3>
+                        গ্রিন ইউনিভার্সিটি অব বাংলাদেশে জাতির জনক বঙ্গবন্ধু শেখ মুজিবুর <a href="#">Read more</a>
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        <h3>PROF DR. KHAWZA IFTEKHAR UDDIN AHMED JOINS GREEN UNIVERSITY AS PRO-VICE CHANCELLOR</h3>
+                        Prof Dr. Khawza Iftekhar Uddin Ahmed joins Green University as Pro-Vice Chancellor <a href="#">Read more</a>
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        <h3>CERTIFICATE GIVING CEREMONY OF TAL-10, FLTR</h3>
+                        Certificate Giving Ceremony of TAL-10, fLTR <a href="#">Read more</a>
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        <h3>OPENING CEREMONY OF 2022 ICPC ASIA DHAKA REGIONAL CONTEST HELD AT GREEN UNIVERSITY OF BANGLADESH</h3>
+                        Opening ceremony of 2022 ICPC Asia Dhaka Regional Contest held at Green University of Bangldadesh <a href="#">Read more</a>
+                    </p>
+                </article>
+            </section>
+
+            <section>
+                <form action="">
+                    <table border="2px">
+                        <tr>
+                            <td><label for="fname">First name</label></td>
+                            <td><input type="text" id="fname" placeholder="Enter First Name" autofocus></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lname">Last name</label></td>
+                            <td><input type="text" id="lname" value="Enter Last Name" readonly></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Departemt">Departemt:</label></td>
+                            <td>
+                                <input type="radio" id="CSE" name="Departemt" value="CSE">
+                                <label for="CSE">CSE</label><br>
+                                <input type="radio" id="EEE" name="Departemt" value="EEE">
+                                <label for="EEE">EEE</label><br>
+                                <input type="radio" id="English" name="Departemt" value="English">
+                                <label for="English">English</label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Batch">Batch:</label></td>
+                            <td>
+                                <select name="Batch" id="Batch">
+                                    <option>192</option>
+                                    <option>193</option>
+                                    <option>201</option>
+                                    <option>202</option>
+                                    <option>203</option>
+                                    <option>211</option>
+                                    <option>212</option>
+                                    <option>213</option>
+                                    <option selected>221</option>
+                                    <option>222</option>
+                                    <option>223</option>
+                                    <option>231</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="club">Club Activitices:</label></td>
+                            <td>
+                                <input type="checkbox" id="gucc" name="club" value="gucc" checked>
+                                <label for="gucc">GUCC</label><br>
+                                <input type="checkbox" id="ieee" name="club" value="ieee">
+                                <label for="ieee">IEEE</label><br>
+                                <input type="checkbox" id="guds" name="club" value="guds">
+                                <label for="guds">GUDS</label><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Login"><br>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                    <p>
+                        <label for="birthday">Date of birth:</label> 
+                        <input type="date" name="birthday" min="1970-01-01" max="2012-01-01">
+                        <input type="time" name="birthday" disabled><br>
+                        <label for="today">From fill up date: </label>
+                        <input type="datetime-local" hidden><br>
+                        <label for="mail">Enter you Email: </label>
+                        <input type="email"><br>
+                        <label for="pic">Add your photo</label>
+                        <input type="file"><br>
+                        <label for="ssc">SSC GPA</label>
+                        <input type="number" name="ssc" max="5" min="1" step="0.01"><br>
+                        <label for="hsc">HSC GPA</label>
+                        <input type="number" name="ssc" max="5" min="1" step="0.01"><br>
+                        <label for="range">Mark yourself (0 to 10): </label>
+                        <input type="range" min="0" max="10"><br>
+                        <label for="Phone">Phone</label>
+                        <input type="tel" maxlength="11"><br>
+                        <label for="homepage">Add your homepage:</label>
+                        <input type="url" id="homepage" name="homepage"><br>
+                        <input type="button" value="submit">
+                        <input type="image" src="favicon.png" alt="Submit" name="submit" width="48" height="48">
+                        <input type="reset"><br>
+
+                    </p>
+                </form>
+            </section>
+
+            <aside>
+                <h1>Notice</h1>
+                <a href="#">Notice: Course Advising and Registration for Fall 2023</a><br>
+                <a href="#">3rd Admission Test Result of Fall Semester 2023</a><br>
+                <a href="#">Temporarily closed student services due to shifting from City Campus to Permanent Campus</a><br>
+            </aside>
+        </main>
+        <footer>
+            <h2>Designed and developed by Al Shahriar Ahommed Shanto</h2>
+        </footer>
+    </body>
+</html>
