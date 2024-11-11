@@ -3,5 +3,6 @@ input:focus {
 }
 
 paragraph{
-    background
+    border: 10px solid green;
+    color: blueviolet;
 }
