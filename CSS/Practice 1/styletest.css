@@ -2,7 +2,11 @@ input:focus {
     border-color: blue;
 }
 
-paragraph{
-    border: 10px solid green;
+.paragraph{
+    border-left: 3px solid green;
     color: blueviolet;
+}
+
+body{
+    background-color: antiquewhite;
 }
