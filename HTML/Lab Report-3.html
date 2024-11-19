@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX and JSON Data Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4a261;
+            color: white;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        #message {
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>American Presidents Data</h1>
+    <button id="fetch-data">Load Presidents Data</button>
+    <p id="message"></p>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Birth</th>
+                <th>Death</th>
+                <th>Took Office</th>
+                <th>Left Office</th>
+                <th>Party</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+
+    <script>
+        document.getElementById('fetch-data').addEventListener('click', function () {
+            const message = document.getElementById('message');
+            const tableBody = document.getElementById('data-table').querySelector('tbody');
+
+            // Display a loading message
+            message.textContent = 'Fetching data...';
+
+            // Fetch data from the server
+            fetch('https://raw.githubusercontent.com/hitch17/sample-data/master/presidents.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Clear existing rows in the table body
+                    tableBody.innerHTML = '';
+
+                    // Populate table rows with JSON data
+                    data.forEach((president, index) => {
+                        const row = `<tr>
+                            <td>${index + 1}</td>
+                            <td>${president.president}</td>
+                            <td>${president.birth_year}</td>
+                            <td>${president.death_year || 'N/A'}</td>
+                            <td>${president.took_office}</td>
+                            <td>${president.left_office || 'N/A'}</td>
+                            <td>${president.party}</td>
+                        </tr>`;
+                        tableBody.innerHTML += row;
+                    });
+
+                    // Clear the message
+                    message.textContent = '';
+                })
+                .catch(error => {
+                    // Display error message
+                    message.textContent = `Error: ${error.message}`;
+                });
+        });
+    </script>
+</body>
+</html>
