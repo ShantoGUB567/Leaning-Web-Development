@@ -5,8 +5,24 @@ input:focus {
 .paragraph{
     border-left: 3px solid green;
     color: blueviolet;
+    padding: 5px;
 }
 
 body{
     background-color: antiquewhite;
+}
+.normal-space {
+    white-space: normal;
+}
+.nowrap-space {
+    white-space: nowrap;
+}
+.pre-space {
+    white-space: pre;
+}
+.pre-wrap-space {
+    white-space: pre-wrap;
+}
+.pre-line-space {
+    white-space: pre-line;
 }
