@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    
+    <style>
+        .header {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .flexbox-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .flexbox-container > div {
+            background-color: cyan;
+            margin: 5px;
+            padding: 20px;
+            font-size: 20px;
+            flex: 1 1 250px; 
+        }
+
+        .article {
+            background-color: #00f0ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">Sample Flexbox Example</header>
+        <div class="flexbox-container">
+            <div class="article">
+                <h3>Dhaka Division</h3><br>
+                The capital and most populous division of Bangladesh. It is the economic, political, and cultural center of the country, hosting Dhaka city, a bustling metropolis known for its vibrant economy, historical landmarks, and educational institutions.
+            </div>
+
+            <div class="article">
+                <h3>Chattogram Division</h3><br>
+                Located in the southeastern part of Bangladesh, it is the main gateway for international trade, home to the largest seaport in the country. Chattogram city is the commercial capital, known for its industries, hill tracts, and beaches like Cox’s Bazar.
+            </div>
+
+            <div class="article">
+                <h3>Khulna Division</h3><br>
+                Located in the southwest, this division is known for the Sundarbans, the world’s largest mangrove forest and home to the Bengal tiger. It is also a hub for shrimp farming and has a mix of industry and agriculture.
+            </div>
+
+            <div class="article">
+                <h3>Rajshahi Division</h3><br>
+                Situated in the northwest, it is known for its agricultural produce, particularly mangoes and silk. Rajshahi city is an educational hub, with several prominent institutions, and the division is also rich in historical and cultural heritage.
+            </div>
+
+            <div class="article">
+                <h3>Sylhet Division</h3><br>
+                Located in the northeastern region, Sylhet is famous for its tea gardens, natural beauty, and religious significance. It has a large diaspora, particularly in the UK, and its economy benefits from remittances.
+            </div>
+
+            <div class="article">
+                <h3>Barishal Division</h3><br>
+                Situated in the southern region, this division is known for its rivers and water-based culture, often referred to as the "Venice of the East." It is a major center for rice and fish production.
+            </div>
+
+            <div class="article">
+                <h3>Rangpur Division</h3><br>
+                Located in the northwestern part of the country, it is predominantly agricultural, with rice, potatoes, and vegetables being key crops. It is also known for historical sites and folk culture.
+            </div>
+
+            <div class="article">
+                <h3>Mymensingh Division</h3><br>
+                One of the newest divisions, located in the north-central part of Bangladesh. It has a strong agricultural economy and is home to the renowned Bangladesh Agricultural University.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

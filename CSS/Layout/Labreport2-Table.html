@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            width:100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 3px solid black;
+            padding: 5px;
+        }
+        .header
+        {
+            background-color: tan;
+            text-align: Left;
+        }
+        .Section{
+            background-color: chocolate;
+        }
+        .Aside{
+            background-color: cornflowerblue;
+        }
+        .Nav1{
+            background-color: darkgray;
+            border-right: none;
+        }
+        .Nav2{
+            background-color: darkgray;
+            border-left: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2" class="header"> Header Nav</th>
+        </tr>
+        <tr>
+            <td class="Section">Section 1</td>
+            <td class="Aside">Aside 1</td>     
+        </tr>
+        <tr>
+            <td class="Section">Section 2</td>
+            <td class="Aside">Aside 2</td>     
+        </tr>
+        <tr>
+            <td class="Section">Section 3</td>
+            <td class="Section"></td>     
+        </tr>
+        <tr>
+            <td class="Nav1">Nav 1</td>
+            <td class="Nav2">Nav 2</td>     
+        </tr>
+    </table>
+</body>
+</html>

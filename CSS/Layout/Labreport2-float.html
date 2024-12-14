@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Layout</title>
+
+    <style>
+      
+        .first {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            color: white;
+            line-height: 50px;
+            font-size: 24px;
+            border-radius: 15px;
+            margin: 10px;
+            float: left;
+            padding: 10px;
+        }
+
+        
+        .first1 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            color: white;
+            line-height: 50px;
+            font-size: 24px;
+            border-radius: 15px;
+            margin: 10px;
+            float: Right;
+            padding: 10px;            
+        }
+
+        .second {
+            font-size: 24px;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 70px; 
+        }
+
+      
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="clearfix">
+        <div class="first">One</div>
+        <div class="first1">Two</div>
+
+        <div class="second">
+            <p> <p>The two boxes should float to either side of this text.</p></p>
+        </div>
+    </div>
+
+</body>
+</html>

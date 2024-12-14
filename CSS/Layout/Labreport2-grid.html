@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+        .item1 { grid-area: header; }
+        .item2 { grid-area: nav; }
+        .item3 { grid-area: section; }
+        .item4 { grid-area: article; }
+        .item5 { grid-area: aside; }
+        .item6 { grid-area: footer; }
+
+       
+        .grid-container {
+            display: grid;
+            grid-template-areas:'header header''nav nav''section aside''section aside''footer footer';
+            grid-template-columns: 2fr 1fr;
+            gap: 5px;
+            padding: 5px;
+            border: 2px solid red;
+        }
+
+        .grid-container div {
+            
+            border: 1px solid black;
+            margin: 15px;
+        }
+
+        .item1{
+            background-color: cyan;
+            padding: auto;
+            
+        }
+        .item2{
+            background-color: magenta;
+            height: 50px;
+        }
+        .item3{
+            background-color: rgb(60, 68, 175);
+            
+        }
+        .item4{
+            background-color: lightpink;
+            height: 100px;
+            
+        }
+        .item5{
+            background-color: lightcoral;
+            
+        }
+        .item6{
+            background-color: rgb(101, 141, 202);
+            border: 1px solid blue;
+            height: 50px;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            Header
+        <div class="item2">
+            Navigation
+        </div>
+        </div>
+        <div class="item3">
+            Section
+            <div class="item4">
+                Article 1
+            </div>
+            <div class="item4">
+                Article 2
+            </div>
+            <div class="item4">
+                Article 3
+            </div>
+        </div>
+        <div class="item5">
+            Aside
+        </div>
+        <div class="item6">
+            Footer
+        </div>
+    </div>
+</body>
+</html>
