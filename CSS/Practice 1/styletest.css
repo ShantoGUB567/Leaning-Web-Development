@@ -53,6 +53,7 @@ ul.a{
     background-color:blueviolet ;
     border-radius: 20px;
     box-shadow: 10px 10px 50px ;
+    margin: auto;
 }
 
 .name_box p{
@@ -62,5 +63,7 @@ ul.a{
 }
 
 .name_box:hover{
-    transform: translateY(-20px);
+    transform: translateY(-30px);
+    transition-duration: 0.2s;
+    background-color: gray;
 }
